@@ -1,5 +1,5 @@
 #/bin/bash
-sudo apt-get install build-essential
+sudo apt-get install build-essential python
 gcc -fno-stack-protector -z execstack vuln.c -o vuln
 sudo chown root:root ./vuln
 sudo chmod +s ./vuln
